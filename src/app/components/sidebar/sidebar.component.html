@@ -1,0 +1,24 @@
+<div class="container fixed-top sidebar">
+<p>
+    <button type="button" class="btn btn-outline-primary" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed"
+      aria-controls="collapseExample">
+      Electronics
+    </button>
+  </p>
+  <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
+    <a  routerLink='Laptops'>Laptop</a><br>
+    <a  routerLink='Mobiles'>Mobiles</a>
+  </div>
+  <p>
+    <button type="button" class="btn btn-outline-primary" (click)="collapse2.toggle()" [attr.aria-expanded]="!isCollapsed"
+      aria-controls="collapseExample2">
+      Clothing
+    </button>
+  </p>
+  <div #collapse2="ngbCollapse" [(ngbCollapse)]="isCollapsed2">
+    <a href="">TShirt</a><br>
+    <a href="">Plain Shirt</a>
+        
+     
+  </div>
+</div>
