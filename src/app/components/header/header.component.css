@@ -1,7 +1,13 @@
-.search-bar{
-    margin-right: 400px;
-}
+/* .search-bar{
+    margin-right: 200px;
+} */
 .search-bar input{
     width: 400px;
     
+}
+.bar button{
+    margin: 5px;
+}
+img{
+    width: 30px;
 }

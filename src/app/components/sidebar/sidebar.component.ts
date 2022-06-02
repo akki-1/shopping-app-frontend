@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent implements OnInit {
+  keyword:string="";
   panelOpenState = false;
   isCollapsed=true;
   isCollapsed2=true;

@@ -2,3 +2,16 @@
 @import '~bootstrap/dist/css/bootstrap.css';
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.card{
+  
+    margin: 5px;
+}
+.card .list-group .list-group-item{
+    padding: 2px;
+}
+.card-body{
+    padding: 7px;
+}
+.card-body h3{
+    font-size: large;
+}

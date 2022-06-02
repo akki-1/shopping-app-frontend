@@ -9,7 +9,7 @@ import { MainService } from 'src/app/services/main.service';
 export class MobilesListComponent implements OnInit {
 
   constructor(private ser:MainService) { }
-
+  public allMobileList:any[]=[]
   ngOnInit(): void {
     this.mobileList()
   }
@@ -17,7 +17,7 @@ export class MobilesListComponent implements OnInit {
   public mobileList(){
     this.ser.getMobilesList().subscribe((res)=>{
 
-      console.log(res);
+      this.allMobileList=(<any>res)
       
     })
   }

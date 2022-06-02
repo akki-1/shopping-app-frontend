@@ -1,0 +1,92 @@
+<h3 class="text-center">Add Your Product</h3>
+<form (ngSubmit)="saveData()">
+<div class="container main">
+    <div class="form-row" >
+        <div class="form-group col-md-4">
+            <label for="exampleFormControlSelect1">Category</label>
+            <select [(ngModel)]="category" (change)="onCategory($event)" name="category" class="form-control form-control-sm" id="exampleFormControlSelect1">
+              <option selected>Electronics</option>
+              <option>Clothing</option>
+              <option>Appliances</option>
+            </select>
+          </div>
+           <div class="form-group col-md-4">
+            <label for="exampleFormControlSelect1">Product Type</label>
+            <select name="productType" [(ngModel)]="productType"  class="form-control form-control-sm" id="exampleFormControlSelect1">
+              <option value="select one">Select One</option>
+              <option *ngIf="elctronicsType">Mobile</option>
+              <option *ngIf="elctronicsType" value="Laptop">Laptop</option>
+              <option *ngIf="clothingType" value="TShirts">TShirts</option>
+              <option *ngIf="clothingType" value="Shirts">Shirts</option>
+              <option *ngIf="appliancesType" value="Shirts">TVs</option>
+              <option *ngIf="appliancesType" value="Shirts">Referigerators</option>
+            </select>
+          </div>
+    </div>
+  </div>
+
+    <div  class="container main2">
+    <div class="row">
+      <div class="col-md-4">
+        <label for="productName">Product Name</label>
+        <input [(ngModel)]="productName" name="productName" type="text" class="form-control" id="productName" placeholder="For Ex. Samsung S21..">
+      </div>
+      
+      <div class="col-md-4">
+        <label for="productROM">Select Image</label>
+        <input (change)="selectedFiles($event)" name="image" type="file" class="form-control" id="image" >
+      </div>
+      <div class="col-md-4">
+        <label for="price">Price</label>
+        <input [(ngModel)]="productPrice" name="productPrice" type="text" class="form-control" id="price" placeholder="For Ex. 30000">
+      </div>
+    </div>
+
+    
+  </div>
+  <div *ngIf="elctronicsType" class="container main3">
+    <div class="row">
+      <div class="col-md-4">
+        <label for="screenSize">Screen Size</label>
+        <input [(ngModel)]="productElectronic.screenSize" name="screenSize" type="text" class="form-control" id="screenSize" placeholder="For Ex. 5.5 inch">
+      </div>
+      <div class="col-md-4">
+        <label for="productROM">Product ROM</label>
+        <input [(ngModel)]="productElectronic.rom" name="rom" type="text" class="form-control" id="productROM" placeholder="For Ex. 64 or 128">
+      </div>
+      <div class="col-md-4">
+        <label for="productRAM">Product RAM</label>
+        <input [(ngModel)]="productElectronic.ram" name="ram" type="text" class="form-control" id="productRAM" placeholder="For Ex. 8 or 16">
+      </div>
+      
+    </div>
+  </div>
+
+  <div *ngIf="clothingType" class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <label for="sleeves">Sleeves</label>
+        <input [(ngModel)]="productClothing.sleeves" name="sleeves" type="text" class="form-control" id="sleeves" placeholder="For Ex. Full or Half">
+      </div>
+      <div class="col-md-4">
+        <label for="productSize">Product Size</label>
+        <input [(ngModel)]="productClothing.size" name="size" type="text" class="form-control" id="productSize" placeholder="For Ex. XL or S">
+      </div>
+      <div class="col-md-4">
+        <label for="productColor">Product Color</label>
+        <input [(ngModel)]="productClothing.colour" name="colour" type="text" class="form-control" id="productColor" placeholder="For Ex. Black or Red">
+      </div>
+      
+    </div>
+  </div>
+  
+  <button type="submit" class="btn btn-outline-primary col-sm-1">Register Product</button>
+
+</form>
+    
+    
+
+
+    
+    
+ 

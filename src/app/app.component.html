@@ -1,13 +1,14 @@
-<div class="row">
+<ngx-ui-loader fgsColor="red" text="Your App Loading"></ngx-ui-loader>
+<div ngxUiLoaderBlurred blur="8" class="row">
   <div class="container-fluid">
     <app-header></app-header>
   </div>
 </div>
-<div class="row">
-  <div class="col-md-3">
+<div ngxUiLoaderBlurred blur="8" class="row ">
+  <div class="col-md-3 sidebar">
     <app-sidebar></app-sidebar>
   </div>
-  <div class="col-md-9">
+  <div class="col-md-9 main">
     <router-outlet></router-outlet>
   </div>
 </div>

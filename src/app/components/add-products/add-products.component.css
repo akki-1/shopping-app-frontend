@@ -1,0 +1,28 @@
+.main{
+
+    margin-top: 50px;
+    justify-content: center;
+   margin-bottom: 20px;
+}
+h3{
+    margin-top: 20px;
+    color: black;
+    font-size: xx-large;
+}
+.main2{
+    font-size: large;
+    margin-bottom: 20px;
+}
+main3 label{
+    color: white;
+    font-size: large;
+}
+button{
+    margin-top: 50px;
+    margin-left: 300px;
+    min-width: 10rem;
+}
+.main label{
+    
+    font-size: large;
+}

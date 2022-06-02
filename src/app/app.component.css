@@ -1,0 +1,17 @@
+
+.main{
+    background-image: url(../assets/bgimage.jpg);
+    /* background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%); */
+    margin-top: 54px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.sidebar{
+    
+    padding: 50px;
+    margin-top: 54px;
+    background: rgb(34,193,195);
+    background: radial-gradient(circle, rgba(34,193,195,1) 35%, rgba(20,76,214,1) 56%, rgba(168,49,218,1) 81%, rgba(223,209,197,1) 100%, rgba(220,143,68,1) 100%, rgba(240,240,240,1) 100%, rgba(228,150,90,0.7931547619047619) 100%);
+    background-attachment: fixed;
+    color: aliceblue;
+}

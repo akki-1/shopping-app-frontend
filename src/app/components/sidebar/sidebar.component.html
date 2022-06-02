@@ -1,24 +1,55 @@
-<div class="container fixed-top sidebar">
+<div class="row main" style="height: 100vh;">
+<div class="col-md-10 sidebar">
 <p>
-    <button type="button" class="btn btn-outline-primary" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed"
+    <button routerLink='Electronics' type="button" class="btn btn-outline-warning" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed"
       aria-controls="collapseExample">
       Electronics
     </button>
   </p>
   <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
     <a  routerLink='Laptops'>Laptop</a><br>
-    <a  routerLink='Mobiles'>Mobiles</a>
+    <a  routerLink='Mobiles'>Mobiles</a><br>
+    
   </div>
   <p>
-    <button type="button" class="btn btn-outline-primary" (click)="collapse2.toggle()" [attr.aria-expanded]="!isCollapsed"
+    <button routerLink='Clothing' type="button" class="btn btn-outline-warning" (click)="collapse2.toggle()" [attr.aria-expanded]="!isCollapsed"
       aria-controls="collapseExample2">
       Clothing
     </button>
   </p>
   <div #collapse2="ngbCollapse" [(ngbCollapse)]="isCollapsed2">
-    <a href="">TShirt</a><br>
-    <a href="">Plain Shirt</a>
-        
-     
+    <a routerLink='TShirts'>TShirt</a><br>
+    <a routerLink='Shirts'>Shirt</a>
   </div>
+
+  <p>
+    <button routerLink='TVs' type="button" class="btn btn-outline-warning" (click)="collapse3.toggle()" [attr.aria-expanded]="!isCollapsed"
+      aria-controls="collapseExample3">
+      Televisions
+    </button>
+  </p>
+  <div #collapse3="ngbCollapse" [(ngbCollapse)]="isCollapsed3">
+    <a routerLink='TShirts'>Smart TVs</a><br>
+    <a routerLink='Shirts'>Non-Smart TVs</a>
+  </div>
+  <p>
+    <button  type="button" class="btn btn-outline-warning" (click)="collapse4.toggle()" [attr.aria-expanded]="!isCollapsed"
+      aria-controls="collapseExample4">
+     Fetch By Price
+    </button>
+  </p>
+  <div #collapse4="ngbCollapse" [(ngbCollapse)]="isCollapsed4">
+    <a [routerLink]="['/Price',5000]">Price less than 5000</a><br>
+    <a [routerLink]="['/Price',10000]">Price less than 10000</a><br>
+    <a [routerLink]="['/Price',25000]">Price less than 25000</a><br>
+    <a [routerLink]="['/Price',50000]">Price less than 50000</a><br>
+    <a [routerLink]="['/Price',60000]">Price less than 60000</a><br>
+    <a [routerLink]="['/Price',80000]">Price less than 80000</a><br>
+    <a [routerLink]="['/Price',100000]">Price less than 100000</a><br>
+  </div>
+
+  <div class="links text-white">
+    
+  </div>
+</div>
 </div>

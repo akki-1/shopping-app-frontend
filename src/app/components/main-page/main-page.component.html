@@ -1,1 +1,73 @@
-<p>main-page works!</p>
+<div class="container main">
+
+    <div class="row">
+        
+            <div *ngFor="let list of allList;index as i" class="card col-md-4 mr-2">
+                <div class="container mt-2 image">
+                    <img src="../../../assets/{{list.pi.imageName}}" class="card-img-top img" alt="...">
+                </div>
+               
+                <div class="card-body">
+                  <h3 class="card-title">{{list.name}}</h3>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Price - {{list.price}}</li>
+                  <li class="list-group-item">RAM - {{list.ram}}</li>
+                  <li class="list-group-item">Storage - {{list.rom}}</li>
+                  <li class="list-group-item">Screen Size - {{list.screenSize}}</li>
+                </ul>
+                <div class="card-body">
+                  <a href="#" class="card-link">Buy Now</a>
+                  <a href="#" class="card-link">Add to Cart</a>
+                </div>
+              </div>
+              <div *ngFor="let list of allClothingList;index as i" class="card col-md-4 mr-2">
+                <div class="container mt-2 image">
+                    <img src="../../../assets/{{list.pci.imageName}}" class="card-img-top img" alt="...">
+                </div>
+               
+                <div class="card-body">
+                  <h3 class="card-title">{{list.name}}</h3>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Price - {{list.price}}</li>
+                  <li class="list-group-item">Size - {{list.size}}</li>
+                  <li class="list-group-item">Colour - {{list.colour}}</li>
+                  <li class="list-group-item">Sleeves - {{list.sleeves}}</li>
+                </ul>
+                <div class="card-body">
+                  <a href="#" class="card-link">Buy Now</a>
+                  <a href="#" class="card-link">Add to Cart</a>
+                </div>
+              </div>
+              <div *ngFor="let list of tvsList;index as i" class="card col-md-4 mr-2">
+                <div class="container mt-2 image">
+                    <img src="../../../assets/{{list.tvImage.imageName}}" class="card-img-top img" alt="...">
+                </div>
+               
+                <div class="card-body">
+                  <h3 class="card-title">{{list.name}}</h3>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <ul class="list-group list-group-flush ">
+                  <li class="list-group-item">Price - {{list.price}}</li>
+                  <li class="list-group-item">Display - {{list.display}}</li>
+                  <li class="list-group-item">Smart TV - {{list.smartTV}}</li>
+                  <li class="list-group-item">Sound - {{list.sound}}</li>
+                  <li class="list-group-item">OS - {{list.os}}</li>
+                </ul>
+                <div class="card-body">
+                  <a href="#" class="card-link">Buy Now</a>
+                  <a href="#" class="card-link">Add to Cart</a>
+                </div>
+              </div>
+        
+        </div>
+        
+        
+
+</div>
+
+
